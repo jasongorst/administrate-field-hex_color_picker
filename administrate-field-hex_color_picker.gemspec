@@ -24,11 +24,11 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'bundler', '~> 1.14'
-  gem.add_development_dependency 'rake', '~> 10.0'
-  gem.add_development_dependency 'rspec', '~> 3.0'
-  gem.add_dependency 'administrate', '~> 0.7'
-  gem.add_dependency 'rails', '~> 6.0'
+  gem.add_development_dependency 'bundler', '~> 2.3.22'
+  gem.add_development_dependency 'rake', '~> 13.0'
+  gem.add_development_dependency 'rspec', '~> 3.12'
+  gem.add_dependency 'administrate', '~> 0.18'
+  gem.add_dependency 'rails', '~> 7.0'
   gem.add_dependency 'jquery-minicolors-rails', '~> 2.2'
-  gem.add_dependency 'jquery-rails', '~> 4.3'
+  gem.add_dependency 'jquery-rails', '~> 4.5'
 end
