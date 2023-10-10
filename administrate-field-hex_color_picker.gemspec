@@ -2,13 +2,15 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
+require "administrate/field/hex_color_picker/version"
+
 GEM_NAME = 'hex_color_picker'
 GEM_NAME_CLASS = GEM_NAME.split('_').map(&:capitalize).join
 FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = '0.1.1'
+  gem.version       = Administrate::Field::HexColorPicker::VERSION
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 
