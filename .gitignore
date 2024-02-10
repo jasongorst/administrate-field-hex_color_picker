@@ -11,3 +11,11 @@
 # rspec failure tracking
 .rspec_status
 *.gem
+
+/node_modules
+/public
+
+*.ipr
+*.iws
+*.iml
+/.idea

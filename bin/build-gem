@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+VERSION=$(ruby -r ./lib/administrate/field/hex_color_picker/version.rb -e "puts Administrate::Field::HexColorPicker::VERSION")
+yarn run build
+yarn run build:css
+gem build administrate-field-hex_color_picker.gemspec
+gem install "administrate-field-hex_color_picker-${VERSION}.gem"

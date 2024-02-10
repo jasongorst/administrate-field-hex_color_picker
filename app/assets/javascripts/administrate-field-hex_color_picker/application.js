@@ -1,2 +1,2 @@
-//= require jquery.minicolors
-//= require_tree
+require("jquery-minicolors/jquery.minicolors")
+require("./hex_color_picker")
