@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-cssruby "3.2.2"
+ruby "3.2.2"
 
 gemspec
 
