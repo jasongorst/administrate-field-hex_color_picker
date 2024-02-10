@@ -10,6 +10,9 @@ module Administrate
             "administrate-field-hex_color_picker/application.css",
           ]
         end
+
+        Administrate::Engine.add_javascript 'administrate-field-hex_color_picker/application'
+        Administrate::Engine.add_stylesheet 'administrate-field-hex_color_picker/application'
       end
     end
   end
