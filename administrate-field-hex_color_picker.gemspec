@@ -10,7 +10,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = Administrate::Field::HexColorPicker::VERSION
+  gem.version       = ::VERSION
 
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
@@ -20,12 +20,13 @@ Gem::Specification.new do |gem|
   gem.homepage      = "http://github.com/headwayio/#{FULL_GEM_NAME}"
   gem.license       = 'MIT'
 
-  gem.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
-  gem.bindir        = 'exe'
-  gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  gem.require_paths = ['lib']
+  gem.files = Dir["{app,lib}/**/*", "LICENSE.txt", "Rakefile"]
+
+  # gem.files         = `git ls-files -z`.split("\x0").reject do |f|
+  #   f.match(%r{^(test|spec|features)/})
+  # end
+
+  # gem.require_paths = ['lib']
 
   gem.add_dependency 'administrate', '~> 1.0.0.beta1'
 end
