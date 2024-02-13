@@ -1,6 +1,2 @@
-@import "jquery-minicolors/jquery.minicolors.css";
+@import "@claviska/jquery-minicolors/jquery.minicolors.css";
 @import "hex_color_picker.css";
-
-.minicolors-no-data-uris .minicolors-sprite {
-  background-image: url(jquery-minicolors/jquery.minicolors.png);
-}

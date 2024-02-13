@@ -1,14 +1,17 @@
 {
   "scripts": {
-    "build": "esbuild app/assets/javascripts/administrate-field-hex_color_picker/application.js --bundle --sourcemap --outdir=app/assets/builds/administrate-field-hex_color_picker --public-path=/assets/administrate-field-hex_color_picker",
-    "build:css": "postcss ./app/assets/stylesheets/administrate-field-hex_color_picker/application.css -o ./app/assets/builds/administrate-field-hex_color_picker/application.css --map"
+    "build": "esbuild app/assets/javascripts/administrate-field-hex_color_picker/application.js --bundle --sourcemap --external:jquery --outdir=app/assets/builds/administrate-field-hex_color_picker --public-path=/assets/administrate-field-hex_color_picker",
+    "build:css": "postcss ./app/assets/stylesheets/administrate-field-hex_color_picker/application.css --output ./app/assets/builds/administrate-field-hex_color_picker/application.css --verbose"
   },
   "dependencies": {
+    "@claviska/jquery-minicolors": "^2.3.6"
+  },
+  "devDependencies": {
     "autoprefixer": "^10.4.17",
     "esbuild": "^0.20.0",
-    "jquery-minicolors": "^2.1.10",
     "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.0.0"
+    "postcss-import": "^16.0.0",
+    "postcss-url": "^10.1.3"
   }
 }

@@ -1,2 +1,2 @@
-require("jquery-minicolors/jquery.minicolors")
+require("@claviska/jquery-minicolors/jquery.minicolors")
 require("./hex_color_picker")
