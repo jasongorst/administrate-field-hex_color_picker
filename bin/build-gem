@@ -2,7 +2,7 @@
 
 set -e
 
-VERSION=$(ruby -r ./lib/administrate/field/hex_color_picker/version.rb -e "puts Administrate::Field::HexColorPicker::VERSION")
+VERSION=$(ruby -r ./lib/administrate/field/hex_color_picker/version.rb -e "puts VERSION")
 yarn run build
 yarn run build:css
 gem build administrate-field-hex_color_picker.gemspec
