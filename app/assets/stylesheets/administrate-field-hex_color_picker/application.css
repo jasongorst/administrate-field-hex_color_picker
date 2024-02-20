@@ -1,2 +1,23 @@
 @import "@claviska/jquery-minicolors/jquery.minicolors.css";
-@import "hex_color_picker.css";
+
+.hex-number {
+  float: left;
+  position: relative;
+  top: 4px;
+}
+
+.hex-swatch {
+  height: 30px;
+  width: 30px;
+  margin-left: 70px;
+}
+
+.minicolors-theme-default .minicolors-input {
+  width: 200px;
+  height: 36px;
+  padding-top: 8px;
+}
+
+.minicolors-theme-default .minicolors-swatch {
+  top: 9px;
+}

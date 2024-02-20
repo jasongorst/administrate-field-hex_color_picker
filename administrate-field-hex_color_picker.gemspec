@@ -28,5 +28,5 @@ Gem::Specification.new do |gem|
 
   # gem.require_paths = ['lib']
 
-  gem.add_dependency 'administrate', '~> 1.0.0.beta1'
+  # gem.add_dependency 'administrate', '~> 1.0.0.beta1'
 end

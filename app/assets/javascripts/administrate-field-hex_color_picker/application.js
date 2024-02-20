@@ -1,2 +1,5 @@
-require("@claviska/jquery-minicolors/jquery.minicolors")
-require("./hex_color_picker")
+import "@claviska/jquery-minicolors/jquery.minicolors";
+
+$(function() {
+  $('.minicolors').minicolors();
+});
