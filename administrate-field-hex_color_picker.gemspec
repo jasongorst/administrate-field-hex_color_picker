@@ -10,7 +10,7 @@ FULL_GEM_NAME = "administrate-field-#{GEM_NAME}"
 
 Gem::Specification.new do |gem|
   gem.name          = FULL_GEM_NAME
-  gem.version       = Administrate::Field::HexColorPicker::VERSION
+  gem.version       = ::VERSION
   gem.authors       = ['Jon Kinney']
   gem.email         = ['jon@headway.io']
 

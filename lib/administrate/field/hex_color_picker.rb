@@ -5,6 +5,8 @@ require_relative "hex_color_picker/engine"
 module Administrate
   module Field
     class HexColorPicker < Base
+      VERSION = ::VERSION
+
       def to_s
         data
       end

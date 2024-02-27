@@ -1,7 +1,4 @@
-require "administrate/field/base"
-require 'rails'
-require 'jquery-rails'
-require 'jquery-minicolors-rails'
+require "administrate/engine"
 
 module Administrate
   module Field
