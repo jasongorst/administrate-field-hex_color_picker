@@ -29,7 +29,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'bundler', '~> 2.4.20'
   gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency 'rspec', '~> 3.12'
-  gem.add_dependency 'administrate', '~> 0.18'
+  gem.add_dependency 'administrate', '= 0.20.0.pre.1'
   gem.add_dependency 'rails', '~> 7.0'
   gem.add_dependency 'jquery-minicolors-rails', '~> 2.2'
   gem.add_dependency 'jquery-rails', '~> 4.5'
